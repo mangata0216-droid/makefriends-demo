@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>互动绘本</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <video id="videoPlayer" playsinline webkit-playsinline></video>
+        
+        <div class="progress-container">
+            <div id="progressBar" class="progress-bar"></div>
+        </div>
+        
+        <div id="startScreen" class="screen start-screen">
+            <button id="startBtn" class="start-btn">开始冒险</button>
+        </div>
+        
+        <div id="endScreenA" class="screen end-screen-a hidden">
+            <button id="toEndBtn" class="to-end-btn">查看结局</button>
+        </div>
+        
+        <div id="endScreenB" class="screen end-screen-b hidden">
+            <button id="restartBtn" class="restart-btn">重新开始</button>
+        </div>
+        
+        <div id="choiceOverlay" class="choice-overlay hidden">
+            <div class="choice-container">
+                <div class="question-bubble">
+                    <p id="questionText" class="question-text"></p>
+                </div>
+                <div id="choiceOptions" class="choice-options"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
